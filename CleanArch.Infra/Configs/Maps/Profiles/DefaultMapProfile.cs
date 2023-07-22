@@ -6,7 +6,7 @@ namespace CleanArch.Infra.Configs.Maps.Profiles
     {
         public DefaultMapProfile()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

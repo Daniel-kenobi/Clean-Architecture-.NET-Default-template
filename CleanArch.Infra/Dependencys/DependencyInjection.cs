@@ -8,8 +8,6 @@ namespace CleanArch.Infra.Dependencys
         public static IServiceCollection Inject(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddAutoMapper(cfg => cfg.AddProfile<DefaultMapProfile>());
-
-
             return serviceCollection;
         }
     }
