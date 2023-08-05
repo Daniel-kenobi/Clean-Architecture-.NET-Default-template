@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Authentication\" />
     <Folder Include="Repository\Database\Entities\" />
   </ItemGroup>
 
