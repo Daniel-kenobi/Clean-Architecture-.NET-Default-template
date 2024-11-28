@@ -1,8 +1,7 @@
-﻿namespace CleanArch.Domain.Models.Foo
+﻿namespace CleanArch.Domain.Models.Foo;
+
+public class FooModel
 {
-    public class FooModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; }
 }

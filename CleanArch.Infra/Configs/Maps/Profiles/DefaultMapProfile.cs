@@ -1,12 +1,9 @@
-﻿using AutoMapper;
+﻿namespace CleanArch.Infra.Configs.Maps.Profiles;
 
-namespace CleanArch.Infra.Configs.Maps.Profiles
+public class DefaultMapProfile : Profile
 {
-    public class DefaultMapProfile : Profile
+    public DefaultMapProfile()
     {
-        public DefaultMapProfile()
-        {
-            throw new NotImplementedException();
-        }
+        throw new NotImplementedException();
     }
 }

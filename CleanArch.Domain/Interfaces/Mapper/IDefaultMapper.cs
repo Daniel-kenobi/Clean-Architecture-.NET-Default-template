@@ -1,7 +1,6 @@
-﻿namespace CleanArch.Domain.Interfaces.Mapper
+﻿namespace CleanArch.Domain.Interfaces.Mapper;
+
+public interface IDefaultMapper
 {
-    public interface IDefaultMapper
-    {
-        public TSource Map<TSource>(object source);
-    }
+    public TSource Map<TSource>(object source);
 }

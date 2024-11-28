@@ -1,28 +1,19 @@
-using CleanArch.Domain.Mediators.Querys.Foo;
-using MediatR;
-using Microsoft.AspNetCore.Mvc;
+namespace CleanArchWebApi.Controllers;
 
-namespace CleanArchWebApi.Controllers
+[ApiController]
+[Route("[controller]")]
+public class FooController(IMediator mediator) : ControllerBase
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class FooController : ControllerBase
+    private readonly IMediator _mediator = mediator;
+
+    [HttpGet]
+    public async Task<IActionResult> Get()
     {
-        private readonly IMediator _mediator;
-        public FooController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
+        var response = await _mediator.Send(new GetFooQuery());
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            var response = await _mediator.Send(new GetFooQuery());
+        if (!response.IsSucessFull)
+            return BadRequest(response.Errors);
 
-            if(!response.IsSucessFull)
-                return BadRequest(response.Errors);
-
-            return Ok(response.ResponseObject);
-        }
+        return Ok(response.ResponseObject);
     }
 }

@@ -1,8 +1,4 @@
-﻿using CleanArch.Domain.Commons.Responses;
-using CleanArch.Domain.Mediators.Querys.Foo;
-using CleanArch.Domain.Models.Foo;
-using MediatR;
-
+﻿
 namespace CleanArch.Application.Mediators.Foo
 {
     public class GetFooQueryHandler : IRequestHandler<GetFooQuery, CommonResponse<FooModel>>

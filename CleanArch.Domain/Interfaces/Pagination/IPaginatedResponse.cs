@@ -1,7 +1,6 @@
-﻿namespace CleanArch.Domain.Interfaces.Pagination
+﻿namespace CleanArch.Domain.Interfaces.Pagination;
+
+public interface IPaginatedResponse
 {
-    public interface IPaginatedResponse
-    {
-        public int TotalItens { get; set; }
-    }
+    public int TotalItens { get; set; }
 }

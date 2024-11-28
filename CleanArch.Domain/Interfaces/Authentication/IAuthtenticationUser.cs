@@ -1,8 +1,7 @@
-﻿namespace CleanArch.Domain.Interfaces.Authentication
+﻿namespace CleanArch.Domain.Interfaces.Authentication;
+
+public interface IAuthtenticationUser
 {
-    public interface IAuthtenticationUser
-    {
-        public string Login { get; set; }
-        public string Password { get; set; }
-    }
+    public string Login { get; set; }
+    public string Password { get; set; }
 }

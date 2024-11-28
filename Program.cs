@@ -1,5 +1,3 @@
-using CleanArch.Infra.Dependencys;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
